@@ -1,8 +1,12 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
     <application
         android:label="tictactoe"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:name="androidx.multidex.MultiDexApplication"
+        android:icon="@mipmap/ic_launcher" >
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -29,5 +33,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8143468415431693~6225602151"/>
     </application>
 </manifest>
